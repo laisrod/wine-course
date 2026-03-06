@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { createPortal } from 'react-dom'
 import SectionWrapper from '../layout/SectionWrapper'
 import galery1Img1 from '../../assets/images/galery1/Screenshot from 2026-03-06 15-02-53.png'
 import galery1Img2 from '../../assets/images/galery1/Screenshot from 2026-03-06 15-03-08.png'
@@ -152,59 +153,61 @@ function Projects() {
         ))}
       </div>
 
-      {activeGallery && (
-        <div
-          className="projects__modal"
-          role="dialog"
-          aria-modal="true"
-          aria-label={activeGallery.title}
-          onClick={closeModal}
-        >
-          <div className="projects__modal-content" onClick={(e) => e.stopPropagation()}>
-            <button
-              type="button"
-              className="projects__modal-close"
-              onClick={closeModal}
-              aria-label="Fechar galeria"
-            >
-              x
-            </button>
+      {activeGallery &&
+        createPortal(
+          <div
+            className="projects__modal"
+            role="dialog"
+            aria-modal="true"
+            aria-label={activeGallery.title}
+            onClick={closeModal}
+          >
+            <div className="projects__modal-content" onClick={(e) => e.stopPropagation()}>
+              <button
+                type="button"
+                className="projects__modal-close"
+                onClick={closeModal}
+                aria-label="Fechar galeria"
+              >
+                x
+              </button>
 
-            <h3 className="projects__modal-title">{activeGallery.title}</h3>
-            <p className="projects__modal-description">{activeGallery.description}</p>
+              <h3 className="projects__modal-title">{activeGallery.title}</h3>
+              <p className="projects__modal-description">{activeGallery.description}</p>
 
-            {activePhoto && (
-              <div className="projects__modal-viewer">
-                <button
-                  type="button"
-                  className="projects__modal-nav projects__modal-nav--prev"
-                  onClick={goToPreviousPhoto}
-                  aria-label="Foto anterior"
-                >
-                  ‹
-                </button>
+              {activePhoto && (
+                <div className="projects__modal-viewer">
+                  <button
+                    type="button"
+                    className="projects__modal-nav projects__modal-nav--prev"
+                    onClick={goToPreviousPhoto}
+                    aria-label="Foto anterior"
+                  >
+                    ‹
+                  </button>
 
-                <figure className="projects__modal-photo-frame">
-                  <img src={activePhoto.src} alt={activePhoto.alt} className="projects__modal-photo" />
-                </figure>
+                  <figure className="projects__modal-photo-frame">
+                    <img src={activePhoto.src} alt={activePhoto.alt} className="projects__modal-photo" />
+                  </figure>
 
-                <button
-                  type="button"
-                  className="projects__modal-nav projects__modal-nav--next"
-                  onClick={goToNextPhoto}
-                  aria-label="Proxima foto"
-                >
-                  ›
-                </button>
-              </div>
-            )}
+                  <button
+                    type="button"
+                    className="projects__modal-nav projects__modal-nav--next"
+                    onClick={goToNextPhoto}
+                    aria-label="Proxima foto"
+                  >
+                    ›
+                  </button>
+                </div>
+              )}
 
-            <p className="projects__modal-counter">
-              {activePhotoIndex + 1} / {activeGallery.photos.length}
-            </p>
-          </div>
-        </div>
-      )}
+              <p className="projects__modal-counter">
+                {activePhotoIndex + 1} / {activeGallery.photos.length}
+              </p>
+            </div>
+          </div>,
+          document.body
+        )}
     </SectionWrapper>
   )
 }
