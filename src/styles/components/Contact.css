@@ -22,7 +22,7 @@
 }
 
 .contact__title {
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-size: var(--font-size-3xl);
   font-weight: 700;
   color: var(--color-text-primary);
@@ -31,8 +31,8 @@
 }
 
 .contact__text {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-sm);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
   color: var(--color-text-secondary);
   line-height: 1.9;
 }
@@ -42,6 +42,10 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
+  padding: var(--space-xl);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(252, 245, 249, 0.95));
 }
 
 .contact__field {
@@ -51,7 +55,7 @@
 }
 
 .contact__label {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: var(--font-size-sm);
   font-weight: 700;
   color: var(--color-text-primary);
@@ -60,7 +64,7 @@
 .contact__input,
 .contact__textarea {
   padding: 0.75rem var(--space-md);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: var(--font-size-sm);
   color: var(--color-text-primary);
   background-color: var(--color-input-bg);
@@ -89,7 +93,7 @@
 .contact__submit {
   width: 100%;
   padding: 0.85rem var(--space-xl);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: var(--font-size-sm);
   font-weight: 700;
   color: var(--color-bg-primary);
@@ -101,8 +105,8 @@
 }
 
 .contact__submit:hover {
-  background-color: #f5c518;
-  color: #111111;
+  background-color: #7d1f3a;
+  color: #ffffff;
   transform: translateY(-1px);
 }
 

@@ -19,9 +19,9 @@
 }
 
 .theme-toggle:hover {
-  background-color: var(--color-accent-light);
-  color: var(--color-accent);
-  border-color: var(--color-accent);
+  background-color: rgba(125, 31, 58, 0.08);
+  color: #7d1f3a;
+  border-color: #c08a2f;
 }
 
 .theme-toggle__icon {

@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0a0a0a;
+  background: radial-gradient(circle at 20% 25%, rgba(125, 31, 58, 0.45) 0%, rgba(26, 12, 30, 0.95) 46%, #130912 100%);
   opacity: 1;
   visibility: visible;
   transition: opacity 0.8s ease, visibility 0.8s ease;
@@ -47,7 +47,7 @@
 }
 
 .splash__name {
-  color: #d4a853;
+  color: #d0a24d;
   font-weight: 700;
 }
 
@@ -67,7 +67,7 @@
   content: '|';
   display: inline-block;
   margin-left: 4px;
-  color: #d4a853;
+  color: #d0a24d;
   animation: splash-blink 0.8s step-end infinite;
 }
 

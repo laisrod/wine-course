@@ -9,10 +9,10 @@ interface HeaderProps {
 }
 
 const NAV_LINKS: NavLink[] = [
-  { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#about', label: 'Sobre' },
+  { href: '#skills', label: 'Curso' },
+  { href: '#projects', label: 'Modulos' },
+  { href: '#contact', label: 'Contato' },
 ]
 
 function Header({ theme, toggleTheme }: HeaderProps) {
@@ -26,7 +26,7 @@ function Header({ theme, toggleTheme }: HeaderProps) {
     <header className="header">
       <div className="container header__container">
         <a href="#hero" className="header__logo" aria-label="Back to top">
-          <span className="header__logo-text">LR</span>
+          <span className="header__logo-text">S</span>
         </a>
 
         <nav
