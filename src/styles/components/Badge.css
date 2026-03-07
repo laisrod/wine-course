@@ -37,9 +37,9 @@
 }
 
 .badge--status {
-  background-color: var(--color-bg-secondary);
-  color: var(--color-text-secondary);
-  border: 1px solid var(--color-border);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #6a2944;
+  border: 1px solid #d7bec8;
 }
 
 /* ---- Status dot element ---- */
@@ -48,7 +48,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #22c55e;
+  background-color: #c08a2f;
   animation: badge-pulse 2s ease-in-out infinite;
 }
 

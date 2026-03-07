@@ -5,29 +5,25 @@ function Footer() {
     <footer className="footer">
       <div className="container footer__container">
         <p className="footer__text">
-          &copy; {currentYear} Laís Rodrigues. Built with React + TypeScript + Ruby on Rails.
+          &copy; {currentYear} Simona. Curso e conteudo digital sobre vinhos.
         </p>
         <div className="footer__links">
           <a
-            href="https://github.com/laisrod"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#about"
             className="footer__link"
-            aria-label="GitHub"
+            aria-label="Sobre"
           >
-            GitHub
+            Sobre
           </a>
           <a
-            href="https://www.linkedin.com/in/devlaisrodrigues/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#projects"
             className="footer__link"
-            aria-label="LinkedIn"
+            aria-label="Modulos"
           >
-            LinkedIn
+            Modulos
           </a>
           <a
-            href="mailto:devlaisrodrigues@gmail.com"
+            href="mailto:simona.vinhos@email.com"
             className="footer__link"
             aria-label="Email"
           >

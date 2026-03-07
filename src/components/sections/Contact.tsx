@@ -32,24 +32,23 @@ function Contact() {
     <SectionWrapper id="contact" className="contact">
       <div className="contact__grid">
         <div className="contact__info">
-          <h2 className="contact__title">./Contact</h2>
+          <h2 className="contact__title">Subscription and Contact</h2>
           <p className="contact__text">
-            Thank you for visiting my portfolio. I look forward to the
-            opportunity to collaborate with you and create unique digital
-            experiences in the future. Write to me through this form
-            and... Let's get started!
+            Quer participar do curso da Simona ou tirar duvidas sobre as aulas?
+            Envie sua mensagem e receba as proximas datas, valores e detalhes do
+            programa completo.
           </p>
         </div>
 
         <form className="contact__form" onSubmit={handleSubmit}>
           <div className="contact__field">
-            <label htmlFor="contact-name" className="contact__label">Name</label>
+            <label htmlFor="contact-name" className="contact__label">Nome</label>
             <input
               id="contact-name"
               type="text"
               name="name"
               className="contact__input"
-              placeholder="Your name"
+              placeholder="Seu nome"
               required
               value={values.name}
               onChange={handleChange('name')}
@@ -63,7 +62,7 @@ function Contact() {
               type="email"
               name="email"
               className="contact__input"
-              placeholder="Your email"
+              placeholder="Seu email"
               required
               value={values.email}
               onChange={handleChange('email')}
@@ -71,12 +70,12 @@ function Contact() {
           </div>
 
           <div className="contact__field">
-            <label htmlFor="contact-message" className="contact__label">Message</label>
+            <label htmlFor="contact-message" className="contact__label">Mensagem</label>
             <textarea
               id="contact-message"
               name="message"
               className="contact__textarea"
-              placeholder="Your message"
+              placeholder="Conte um pouco sobre seu interesse no curso"
               rows={6}
               required
               value={values.message}
@@ -89,12 +88,12 @@ function Contact() {
             className="contact__submit"
             disabled={sending || submitted}
           >
-            {sending ? 'Sending...' : submitted ? 'Message Sent ✓' : 'Send Message'}
+            {sending ? 'Enviando...' : submitted ? 'Mensagem enviada com sucesso' : 'Quero me inscrever'}
           </button>
 
           {submitted && (
             <p className="contact__success" role="status">
-              Message sent successfully! I'll get back to you soon.
+              Mensagem enviada com sucesso! Em breve voce recebe um retorno.
             </p>
           )}
 

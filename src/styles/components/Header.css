@@ -36,7 +36,7 @@
 }
 
 .header__logo:hover {
-  color: #999999;
+  color: #7d1f3a;
 }
 
 .header__logo-text {
@@ -46,7 +46,7 @@
   width: 40px;
   height: 40px;
   border-radius: var(--radius-md);
-  background-color: #333333;
+  background: linear-gradient(135deg, #7d1f3a, #5c2f70);
   color: #ffffff;
   font-size: var(--font-size-sm);
   font-weight: 700;
@@ -77,12 +77,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #f5c518;
+  background-color: #c08a2f;
   transition: width var(--transition-base);
 }
 
 .header__nav-link:hover {
-  color: #f5c518;
+  color: #7d1f3a;
 }
 
 .header__nav-link:hover::after {

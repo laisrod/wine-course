@@ -3,29 +3,26 @@ import SectionWrapper from '../layout/SectionWrapper'
 function Skills() {
   return (
     <SectionWrapper id="skills" className="skills">
-      <h2 className="skills__title">./The Technologies I Use</h2>
+      <h2 className="skills__title">What you will learn</h2>
 
       <div className="skills__content">
         <p className="skills__paragraph">
-          In my projects, I focus on building applications that feel clear,
-          engaging, and purposeful. I work with modern tools across the full
-          stack — from React and TypeScript on the frontend to Ruby on Rails
-          and Node.js on the backend — where performance and developer
-          experience complement each other.
+          O curso combina teoria essencial e pratica guiada para desenvolver seu
+          paladar de forma estruturada. Voce aprende a analisar aparencia, aromas
+          e sabor com metodo, entendendo como identificar estilos e qualidade.
         </p>
 
         <p className="skills__paragraph">
-          My process blends clean architecture, testing, and usability. I enjoy
-          exploring how subtle details — type safety, component patterns, API
-          design, or responsive layouts — can shape how people perceive and use
-          a product.
+          Simona apresenta tecnicas de degustacao, dicas de harmonizacao e
+          criterios para escolher vinhos com mais seguranca no dia a dia, seja
+          para jantar em casa, presentear ou montar uma pequena adega pessoal.
         </p>
 
         <p className="skills__paragraph">
-          I also hold hands-on experience with TDD, Docker, CI/CD pipelines,
-          and real-time features with WebSockets. This background allows me to
-          approach each project from both a creative and analytical perspective,
-          ensuring the final result feels intuitive and meaningful.
+          Tambem exploramos regioes marcantes como Lanzarote, nas Ilhas Canarias,
+          com foco em contexto, tipicidade e recomendacoes reais. O objetivo e
+          que voce saia do curso confiante para degustar, conversar e escolher
+          melhor cada garrafa.
         </p>
       </div>
     </SectionWrapper>
