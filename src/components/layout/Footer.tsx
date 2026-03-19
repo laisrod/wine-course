@@ -23,7 +23,9 @@ function Footer() {
             Gallery
           </a>
           <a
-            href="mailto:simona.balzelli@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=simona.balzelli@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="footer__link"
             aria-label="Email"
           >
