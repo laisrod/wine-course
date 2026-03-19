@@ -1,17 +1,17 @@
 function MarqueeText() {
   const wineTopics = [
-    'Degustacao Guiada',
-    'Harmonizacao',
-    'Regioes Classicas',
-    'Lanzarote',
-    'Eventos',
-    'Recomendacoes',
-    'Aromas e Sabores',
-    'Servico de Vinhos',
-    'Analise Sensorial',
-    'Estilos de Uva',
-    'Conteudo em Video',
-    'Curadoria de Rotulos',
+    'Tempranillo',
+    'Garnacha',
+    'Albarino',
+    'Touriga Nacional',
+    'Arinto',
+    'Baga',
+    'Sangiovese',
+    'Nebbiolo',
+    'Barbera',
+    'Pinot Noir',
+    'Chardonnay',
+    'Riesling',
   ]
 
   const wineIcon = (
