@@ -50,7 +50,8 @@ function Feedbabks() {
     <SectionWrapper id="feedbacks" className="feedbacks">
       <h2 className="feedbacks__title">Feedbacks</h2>
       <p className="feedbacks__intro">
-Real stories from students and friends who improved their wine tasting skills with Simona's course.      </p>
+        Real stories from students and friends who improved their wine tasting skills with Simona's course.      
+      </p>
 
       <div className="feedbacks__carousel">
         <button

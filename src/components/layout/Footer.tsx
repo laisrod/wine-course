@@ -23,7 +23,7 @@ function Footer() {
             Gallery
           </a>
           <a
-            href="mailto:simona.vinhos@email.com"
+            href="mailto:simona.balzelli@gmail.com"
             className="footer__link"
             aria-label="Email"
           >

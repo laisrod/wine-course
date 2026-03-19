@@ -27,3 +27,4 @@ tsconfig.tsbuildinfo
 *.log
 npm-debug.log*
 test-results/
+.vercel
