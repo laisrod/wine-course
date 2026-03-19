@@ -4,33 +4,33 @@ import SectionWrapper from '../layout/SectionWrapper'
 const FEEDBACKS = [
   {
     name: 'Ana M.',
-    role: 'Aluna iniciante',
+    role: 'Beginner student',
     quote:
-      'Eu nao sabia por onde comecar no mundo dos vinhos. As aulas da Simona sao objetivas, praticas e muito elegantes.',
+      'I didnt know where to begin in the world of wine. Simonas classes are objective, practical, and very elegant.'
   },
   {
     name: 'Carla V.',
-    role: 'Amante de degustacao',
+    role: 'Lover of food tasting',
     quote:
-      'A parte de harmonizacao mudou meus jantares. Hoje escolho vinhos com seguranca e consigo explicar melhor o que estou provando.',
+      'The wine pairing aspect has changed my dinners. Today I choose wines with confidence and can better explain what Im tasting.'  
   },
   {
     name: 'Rafael S.',
-    role: 'Entusiasta de terroir',
+    role: 'Enthusiast',
     quote:
-      'A curadoria sobre Lanzarote foi excelente. Conteudo claro, visual bonito e uma experiencia premium do inicio ao fim.',
+      'The curation of the Lanzarote feature was excellent. Clear content, beautiful visuals, and a premium experience from start to finish.'
   },
   {
     name: 'Beatriz L.',
-    role: 'Participante do curso',
+    role: 'Course participant',
     quote:
-      'Os feedbacks de degustacao foram muito ricos. Aprendi a perceber aroma, textura e final com muito mais clareza.',
+      'The tasting feedback was very insightful. I learned to perceive aroma, texture, and finish with much greater clarity.'
   },
   {
     name: 'Marcos T.',
-    role: 'Colecionador iniciante',
+    role: 'Beginner collector',
     quote:
-      'A didatica e moderna e direta. Em pouco tempo consegui montar minha selecao de vinhos com escolhas muito melhores.',
+      'The teaching method is modern and direct. In a short time, I was able to put together my wine selection with much better choices.'
   },
 ]
 
