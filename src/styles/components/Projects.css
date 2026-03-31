@@ -90,6 +90,12 @@
   filter: saturate(0.92);
 }
 
+/* Focus bottom half for the home tasting photo */
+.projects__photo[src*="2026-03-20 09-04-02.jpeg"] {
+  aspect-ratio: 16 / 5;
+  object-position: center bottom;
+}
+
 .projects__photo-frame:hover .projects__photo {
   transform: scale(1.04);
   filter: saturate(1.05);
@@ -170,7 +176,8 @@
 
 .projects__modal-photo {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  max-height: 65vh;
+  height: auto;
   object-fit: cover;
 }
 

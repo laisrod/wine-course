@@ -1,11 +1,11 @@
 import type { ProjectData } from '../types'
-
 import palevaImg from '../assets/images/paleva.png'
 import brazilianCinemaImg from '../assets/images/brazilian-cinema.jpg'
+import roseShopImg from '../assets/images/rose-shop.jpg'
 import constellationImg from '../assets/images/constellation.png'
 import jokesAppImg from '../assets/images/jokes-app.jpg'
 import budgetsAppImg from '../assets/images/budgets-app.jpg'
-import roseShopImg from '../assets/images/rose-shop.jpg'
+
 
 const PROJECTS: ProjectData[] = [
   {
