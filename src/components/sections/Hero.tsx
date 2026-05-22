@@ -1,7 +1,9 @@
 import { useRef, useCallback } from 'react'
 import { useSpring, animated, to } from '@react-spring/web'
+import { useSiteSettings } from '../../hooks/useSiteSettings'
 
 function Hero() {
+  const settings = useSiteSettings()
   const h1Ref = useRef<HTMLHeadingElement>(null)
 
   const [springs, api] = useSpring(() => ({
@@ -71,31 +73,29 @@ function Hero() {
             WebkitTextFillColor: 'transparent',
           }}
         >
-          Sharing my passion for wine and inspiring my friends
-          
+          {settings.heroTitle}
         </animated.h1>
 
         <div className="hero__bottom">
           <div className="hero__info">
-            <p className="hero__name">Simona</p>
-            <p className="hero__title">Wine Lover with WSET L3</p>
+            <p className="hero__name">{settings.heroName}</p>
+            <p className="hero__title">{settings.heroSubtitle}</p>
           </div>
-        
 
           <div className="hero__social">
             <a
-              href="https://www.instagram.com/winewithsimo/"
+              href={`https://www.instagram.com/${settings.heroInstagram.replace('@', '')}/`}
               target="_blank"
               rel="noopener noreferrer"
               className="hero__social-link"
-              aria-label="Instagram de Wine with Simo"
+              aria-label={`Instagram ${settings.heroInstagram}`}
             >
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                 <path d="M16 11.37a4 4 0 1 1-1.7-1.7 4 4 0 0 1 1.7 1.7z" />
                 <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
               </svg>
-              <span className="hero__social-text">@winewithsimo</span>
+              <span className="hero__social-text">{settings.heroInstagram}</span>
             </a>
           </div>
         </div>

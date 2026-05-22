@@ -1,8 +1,9 @@
 import SectionWrapper from '../layout/SectionWrapper'
-import { FEEDBACKS } from '../../constants/feedbacks'
+import { useFeedbacks } from '../../hooks/useFeedbacks'
 import { useFeedbackCarousel } from '../../hooks/useFeedbackCarousel'
 
 function Feedbabks() {
+  const feedbacks = useFeedbacks()
   const { sliderRef, scrollFeedbacks } = useFeedbackCarousel()
 
   return (
@@ -23,7 +24,7 @@ function Feedbabks() {
         </button>
 
         <div className="feedbacks__grid" ref={sliderRef}>
-          {FEEDBACKS.map((item) => (
+          {feedbacks.map((item) => (
             <article key={item.name} className="feedbacks__card">
               <div className="feedbacks__rating" aria-label="5 estrelas">
                 <span>★★★★★</span>

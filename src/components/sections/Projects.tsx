@@ -1,9 +1,10 @@
 import { createPortal } from 'react-dom'
 import SectionWrapper from '../layout/SectionWrapper'
-import { PHOTO_GALLERIES } from '../../constants/photoGalleries'
+import { useSanityGalleries } from '../../hooks/useSanityGalleries'
 import { useGalleryModal } from '../../hooks/useGalleryModal'
 
 function Projects() {
+  const galleries = useSanityGalleries()
   const {
     activeGallery,
     activePhoto,
@@ -12,14 +13,14 @@ function Projects() {
     closeModal,
     goToNextPhoto,
     goToPreviousPhoto,
-  } = useGalleryModal(PHOTO_GALLERIES)
+  } = useGalleryModal(galleries)
 
   return (
     <SectionWrapper id="projects" className="projects">
       <h2 className="projects__title">Gallery</h2>
 
       <div className="projects__galleries">
-        {PHOTO_GALLERIES.map((gallery, index) => (
+        {galleries.map((gallery, index) => (
           <button
             key={gallery.title}
             type="button"

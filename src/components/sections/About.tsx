@@ -1,7 +1,9 @@
 import SectionWrapper from '../layout/SectionWrapper'
 import avatarImg from '../../assets/images/portifolioeu.jpg'
+import { useSiteSettings } from '../../hooks/useSiteSettings'
 
 function About() {
+  const settings = useSiteSettings()
   return (
     <SectionWrapper id="about" className="about">
       <h2 className="about__title">About Simona</h2>
@@ -9,17 +11,8 @@ function About() {
       <div className="about__grid">
         <div className="about__left">
           <div className="about__content">
-            <p className="about__paragraph">
-            I am certified with merit in WSET Level and I share my passion for wine in an accessible and
-            elegant way. As a digital content creator, I transform technical topics into practical 
-            experiences for those who want to learn wine tasting with confidence and enjoyment.
-            </p>
-
-            <p className="about__paragraph">
-            I also love creating personalized wine tastings, thoughtfully designed according to the 
-            level of experience and interests of each group, so that every tasting becomes both 
-            educational and enjoyable. 🍷
-            </p>
+            <p className="about__paragraph">{settings.aboutParagraph1}</p>
+            <p className="about__paragraph">{settings.aboutParagraph2}</p>
           </div>
 
           <div className="about__social">

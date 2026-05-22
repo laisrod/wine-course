@@ -1,10 +1,12 @@
 import SectionWrapper from '../layout/SectionWrapper'
 import { useForm } from '../../hooks/useForm'
 import type { ContactFormValues } from '../../types'
+import { useSiteSettings } from '../../hooks/useSiteSettings'
 
 const FORMSPREE_ID = 'xojkrzvv'
 
 function Contact() {
+  const settings = useSiteSettings()
   const { values, handleChange, handleSubmit, submitted, sending, error } =
     useForm<ContactFormValues>({
       initialValues: { name: '', email: '', message: '' },
@@ -32,10 +34,8 @@ function Contact() {
     <SectionWrapper id="contact" className="contact">
       <div className="contact__grid">
         <div className="contact__info">
-          <h2 className="contact__title">Subscription and Contact</h2>
-          <p className="contact__text">
-            Would you like to participate in Simona's tastings or have questions about the classes? Send us a message and receive further information, pricing, and details of the complete program.
-          </p>
+          <h2 className="contact__title">{settings.contactTitle}</h2>
+          <p className="contact__text">{settings.contactText}</p>
         </div>
 
         <form className="contact__form" onSubmit={handleSubmit}>
